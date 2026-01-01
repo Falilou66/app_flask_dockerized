@@ -60,42 +60,46 @@ Elle est conçue pour servir de **base solide** pour :
 FROM python:3.9-slim
 
 WORKDIR /app
+
 COPY requirements.txt .
+
 COPY app.py .
+
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
+
 CMD ["python", "app.py"]
 
 ## ⚙️ Build de l’image Docker
-docker build -t app_flask .
+### docker build -t app_flask .
 
 ## 🔐 Connexion à Docker Hub
-docker login
+### docker login
 
 ## 🏷️ Tag de l’image
-docker tag app_flask hackira66/app_flask:1.0
+### docker tag app_flask hackira66/app_flask:1.0
 
 
 ### ⚠️ Le username Docker Hub doit être en minuscules.
 
 ## 📤 Push vers Docker Hub
-docker push hackira66/app_flask:1.0
+### docker push hackira66/app_flask:1.0
 
 
 ## ✅ Image publiée avec succès 🎉
 
 ## 📥 Pull & Run (n’importe où)
-docker pull hackira66/app_flask:1.0
-docker run -p 5000:5000 hackira66/app_flask:1.0
+### docker pull hackira66/app_flask:1.0
+### docker run -p 5000:5000 hackira66/app_flask:1.0
 
 
 ## 🌐 Accès :
 
-http://localhost:5000
+### http://localhost:5000
 
 ## 🧪 Lancer avec Docker Compose
-docker compose up --build
+### docker compose up --build
 
 ## 📈 Bonnes pratiques intégrées
 
@@ -107,19 +111,10 @@ docker compose up --build
 
 ✔️ Structure scalable
 
-## 🚀 Roadmap (idées)
-
-CI/CD GitHub Actions → Docker Hub
-
-Multi-stage build
-
-Support FastAPI
-
-Déploiement cloud (Render / AWS / Railway)
 
 ## 👨🏽‍💻 Auteur
 
-Hackira Tech
+Hackira
 🚀 Ingénierie logicielle & systèmes d’information
 💡 Cloud • DevOps • IA • Web & Mobile
 
