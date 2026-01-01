@@ -130,6 +130,7 @@ Hackira
 
 ✨ Si ce projet t’aide, pense à laisser une ⭐ sur GitHub ! ✨
 
-</div> ```
-
-```bash# app_flask_dockerized
+</div> 
+```
+bash# app_flask_dockerized
+```
