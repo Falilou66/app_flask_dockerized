@@ -52,8 +52,11 @@ Elle est conçue pour servir de **base solide** pour :
 
 .
 ├── Dockerfile
+
 ├── requirements.txt
+
 ├── app.py
+
 └── docker-compose.yml
 
 ## 🐋 Dockerfile
@@ -72,7 +75,9 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 
 ## ⚙️ Build de l’image Docker
-### docker build -t app_flask .
+bash# app_flask_dockerized
+
+docker build -t app_flask .
 
 ## 🔐 Connexion à Docker Hub
 ### docker login
