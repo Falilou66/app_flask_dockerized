@@ -16,7 +16,7 @@
 
 ## 🌍 Présentation
 
-**Flask App – Dockerized** est une application Flask légère, entièrement conteneurisée avec Docker.  
+Ce doc vous permet de comprendre comment Dockerizer une app Flask
 Elle est conçue pour servir de **base solide** pour :
 - APIs REST
 - microservices
@@ -125,10 +125,6 @@ Hackira Tech
 
 🔗 Building impactful tech solutions
 
-📜 Licence
-
-Ce projet est sous licence MIT.
-Libre d’utilisation, de modification et de distribution.
 
 <div align="center">
 
